@@ -8,8 +8,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         var PACKAGE_NAME: String
-        PACKAGE_NAME = getApplicationContext().getPackageName();
-
-        print(PACKAGE_NAME);
+        PACKAGE_NAME = applicationContext.packageName
+        println("Hello World")
+        print("Package name: " + PACKAGE_NAME)
     }
 }
